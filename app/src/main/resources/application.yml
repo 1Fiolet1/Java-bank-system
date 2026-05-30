@@ -1,0 +1,32 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/banks_lab
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
+  kafka:
+    bootstrap-servers: localhost:9092
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+
+bank:
+  kafka:
+    topic:
+      broadcast: rates.broadcast
+      request: rates.request
+      reply: rates.reply
+  rates:
+    staleness-threshold-ms: 30000
+    request-timeout-ms: 5000

@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: rates-service
+  kafka:
+    bootstrap-servers: localhost:9092
+rates:
+  publish-interval-ms: 5000
+  volatility: 0.02
+  kafka:
+    topic:
+      broadcast: rates.broadcast
+      request: rates.request
