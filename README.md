@@ -24,3 +24,5 @@
 - Spring Data JPA / Hibernate
 - Apache Kafka 3.7
 - PostgreSQL
+
+![Схема базы данных](db_schema.png)
