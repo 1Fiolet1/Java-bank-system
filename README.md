@@ -25,4 +25,6 @@
 - Apache Kafka 3.7
 - PostgreSQL
 
+## Схема БД
+
 ![Схема базы данных](db_schema.png)
